@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CookieTest < ActiveSupport::TestCase
+class BiskuitesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

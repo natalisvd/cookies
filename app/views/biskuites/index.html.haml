@@ -1,0 +1,31 @@
+%h1
+  Все печеньки
+
+.row.biskuites
+  -@biskuites.each do |biskuite|
+    .biskuite.col-sm-4.col-md-2
+      .thumbnail
+        %h2
+          =biskuite.name
+        %img{:src => @biskuites.first.photo, :class=> 'biskuite_photo'}/
+        .caption
+          %p
+            %b Состав:
+            =biskuite.composition
+          %p
+            %b Цена:
+            =biskuite.price
+            $
+            %a.btn.btn-primary{:href => "#", :role => "button"} Button
+            %a.btn.btn-default{:href => "#", :role => "button"} Button
+      -#
+    -#  %img{:src => @biskuites.first.photo, :class=> 'biskuite_photo'}
+    -#  %h3.biskuites_name
+    -#
+    -#  %p.biskuites_composition
+    -#
+    -#  %p.biskuites_price
+    -#
+
+%div
+  =render 'form_for'

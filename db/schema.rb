@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170307171753) do
+ActiveRecord::Schema.define(version: 20170309124436) do
 
-  create_table "cookies", force: :cascade do |t|
+  create_table "biskuites", force: :cascade do |t|
     t.string   "name"
     t.text     "composition"
     t.integer  "price"

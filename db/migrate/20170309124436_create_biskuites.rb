@@ -1,6 +1,6 @@
-class CreateCookies < ActiveRecord::Migration[5.0]
+class CreateBiskuites < ActiveRecord::Migration[5.0]
   def change
-    create_table :cookies do |t|
+    create_table :biskuites do |t|
       t.string :name
       t.text :composition
       t.integer :price
